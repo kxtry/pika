@@ -8,6 +8,7 @@ echo "path_release=$path_release"
 
 /bin/cp -rf $path_script/version.h.template $path_script/include/pika_version.h && echo "$path_script/include/pika_version.h" | xargs /bin/sed -i "s#{{build_time}}#$build_time#g"
 
+chmod a+x detect_environment
 find ./ -name '*.sh'|xargs chmod a+x
 
 docker container prune -f
