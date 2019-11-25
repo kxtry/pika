@@ -1,3 +1,8 @@
+Base on pika 3.2.7  
+Add hsetonce / setonce / incrbyrange / hincrbyrange command.
+setonce / hsetonce just can set only one time before it expire.
+incrbyrange just the data in range of [min, max], can be increase.
+
 # Pika
 
 [![Build Status](https://travis-ci.org/Qihoo360/pika.svg?branch=master)](https://travis-ci.org/Qihoo360/pika)
